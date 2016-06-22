@@ -45,3 +45,9 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+.classpath
+.project
+*.class
+.settings/org.eclipse.jdt.core.prefs
+bin/META-INF/MANIFEST.MF
+src/META-INF/MANIFEST.MF
