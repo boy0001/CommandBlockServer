@@ -49,6 +49,7 @@ public class Main {
             net.minecraft.server.v1_8_R3.CommandAbstract.inject();
             org.bukkit.craftbukkit.v1_8_R3.command.VanillaCommandWrapper.inject();
             net.minecraft.server.v1_8_R3.CommandBlockListenerAbstract.inject();
+            net.minecraft.server.v1_8_R3.PacketPlayInCustomPayload.inject();
         } catch (Throwable e) {
             
         }
@@ -59,6 +60,7 @@ public class Main {
             net.minecraft.server.v1_9_R1.CommandAbstract.inject();
             org.bukkit.craftbukkit.v1_9_R1.command.VanillaCommandWrapper.inject();
             net.minecraft.server.v1_9_R1.CommandBlockListenerAbstract.inject();
+            net.minecraft.server.v1_9_R1.PacketPlayInCustomPayload.inject();
         } catch (Throwable e) {
             
         }
@@ -70,6 +72,7 @@ public class Main {
             org.bukkit.craftbukkit.v1_9_R2.command.VanillaCommandWrapper.inject();
             net.minecraft.server.v1_9_R2.CommandBlockListenerAbstract.inject();
             net.minecraft.server.v1_9_R2.PlayerInteractManager.inject();
+            net.minecraft.server.v1_9_R2.PacketPlayInCustomPayload.inject();
         } catch (Throwable e) {
             
         }
@@ -80,6 +83,9 @@ public class Main {
             net.minecraft.server.v1_10_R1.CommandAbstract.inject();
             org.bukkit.craftbukkit.v1_10_R1.command.VanillaCommandWrapper.inject();
             net.minecraft.server.v1_10_R1.CommandBlockListenerAbstract.inject();
+            net.minecraft.server.v1_10_R1.PlayerInteractManager.inject();
+            net.minecraft.server.v1_10_R1.PacketPlayOutEntityStatus.inject();
+            net.minecraft.server.v1_10_R1.PacketPlayInCustomPayload.inject();
         } catch (Throwable e) {
             
         }
