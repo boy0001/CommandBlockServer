@@ -27,6 +27,8 @@ public class Main {
         inject_1_9_R1();
         inject_1_9_R2();
         inject_1_10_R1();
+        inject_1_11_R1();
+        inject_1_12_R1();
         try {
             loadJar(new File("CommandBlockServer_lib/spigot.jar"));
         } catch (IOException e) {
@@ -86,6 +88,32 @@ public class Main {
             net.minecraft.server.v1_10_R1.PlayerInteractManager.inject();
             net.minecraft.server.v1_10_R1.PacketPlayOutEntityStatus.inject();
             net.minecraft.server.v1_10_R1.PacketPlayInCustomPayload.inject();
+        } catch (Throwable e) {
+            
+        }
+    }
+    
+    public static void inject_1_11_R1() {
+        try {
+            net.minecraft.server.v1_11_R1.CommandAbstract.inject();
+            org.bukkit.craftbukkit.v1_11_R1.command.VanillaCommandWrapper.inject();
+            net.minecraft.server.v1_11_R1.CommandBlockListenerAbstract.inject();
+            net.minecraft.server.v1_11_R1.PlayerInteractManager.inject();
+            net.minecraft.server.v1_11_R1.PacketPlayOutEntityStatus.inject();
+            net.minecraft.server.v1_11_R1.PacketPlayInCustomPayload.inject();
+        } catch (Throwable e) {
+            
+        }
+    }
+    
+    public static void inject_1_12_R1() {
+        try {
+            net.minecraft.server.v1_12_R1.CommandAbstract.inject();
+            org.bukkit.craftbukkit.v1_12_R1.command.VanillaCommandWrapper.inject();
+            net.minecraft.server.v1_12_R1.CommandBlockListenerAbstract.inject();
+            net.minecraft.server.v1_12_R1.PlayerInteractManager.inject();
+            net.minecraft.server.v1_12_R1.PacketPlayOutEntityStatus.inject();
+            net.minecraft.server.v1_12_R1.PacketPlayInCustomPayload.inject();
         } catch (Throwable e) {
             
         }
