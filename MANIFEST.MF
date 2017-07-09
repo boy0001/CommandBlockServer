@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Class-Path: . CommandBlockServer_lib/spigot-1.9.4.jar CommandBlockServer_lib/spigot-1.8.jar CommandBlockServer_lib/spigot-1.9.2.jar CommandBlockServer_lib/spigot-1.10.jar CommandBlockServer_lib/spigot-1.11.jar CommandBlockServer_lib/spigot-1.12.jar CommandBlockServer_lib/spigot.jar
+Main-Class: com.boydti.cbs.Main
